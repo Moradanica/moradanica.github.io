@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "moradanica.github.io",
+  base: "https://github.com/Moradanica/moradanica.github.io",
 });
