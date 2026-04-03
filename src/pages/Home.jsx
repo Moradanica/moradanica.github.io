@@ -1,8 +1,7 @@
 import { maxGeneratorDuration, motion } from "framer-motion";
 import mypic from "../assets/mypic.JPG";
 import { useState, useEffect } from "react";
-
-import myPic from "../assets/myPic.JPG";
+import myPic from "../assets/mypic.JPG";
 
 export default function Home() {
   return (
