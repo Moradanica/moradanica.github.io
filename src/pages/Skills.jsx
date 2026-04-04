@@ -1,34 +1,56 @@
+import SkillCard from "../components/SkillCard";
+
 export default function Skills() {
   return (
-    <div className="h-screen">
-      <h1 className="font-raleway font-bold">Skills</h1>
-      <p>Technologies</p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores adipisci
-      asperiores laudantium beatae aperiam est autem, quaerat magnam iure
-      repellat nobis tempore, accusamus quos voluptatibus. Nam dignissimos quis
-      nisi iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Molestias ducimus dolor, cupiditate nostrum quia iure obcaecati vitae
-      placeat, adipisci officiis provident quam minima numquam architecto, porro
-      autem consequatur? Nulla, rerum. Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Deserunt ullam delectus laboriosam dicta esse porro,
-      obcaecati commodi animi, consectetur eaque facilis repellendus atque
-      nesciunt reprehenderit iste pariatur a temporibus maiores. Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Illo, sed! Nisi consectetur
-      doloribus molestiae ex ipsa, ut facilis quibusdam eligendi quia asperiores
-      autem architecto in dolorum, maiores quaerat numquam porro. Lorem ipsum,
-      dolor sit amet consectetur adipisicing elit. Accusantium laudantium quasi
-      quae. Nisi dolor natus iure neque tempora nesciunt fuga consectetur
-      aliquid facere expedita illo repellat veniam, ex, sed voluptates. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. A, pariatur quos neque
-      dolor asperiores maxime reiciendis eveniet ducimus ipsa numquam?
-      Voluptatibus odit quaerat maxime repellat nesciunt inventore doloremque
-      ipsam qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-      quos nesciunt magni totam! Quae atque, officia at possimus saepe dolores
-      maxime, laborum amet expedita praesentium esse! Libero nesciunt nulla
-      aliquid?
-      <ul>
-        <li></li>
-      </ul>
+    <div className="flex flex-col h-screen gap-3 pt-16">
+      <h1 className="uppercase font-bold text-4xl px-23">Skills</h1>
+      <div className="grid gap-8 md:grid-cols-2 auto-rows-fr items-stretch p-20">
+        <SkillCard
+          title="Backend"
+          skills={[
+            "Java",
+            "Spring Boot",
+            "Spring Data JPA",
+            "REST APIs",
+            "Hibernate",
+            "Jakarata EE",
+            "ashdkajsdhkajsdhkajshdkjashajshdkajshdajksasjhdaksjdhasdhasjk",
+            "asdjakjshdakjshdakjsdhajksdh",
+          ]}
+        />
+
+        <SkillCard
+          title="Frontend"
+          skills={[
+            "React",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "Javascript (Basic)",
+            "jQuery",
+            "asdjajklsdh",
+            "ajshdakjshd",
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto unde sint perspiciatis! Velit incidunt, blanditiis nulla qui dolor, excepturi at in, consequatur doloremque laboriosam aut soluta ipsum sunt perferendis maiores.",
+          ]}
+        />
+
+        <SkillCard
+          title="Tools and DevOps"
+          skills={[
+            "Git & Github",
+            "AWS EC2",
+            "Elastic Beanstalk",
+            "Maven",
+            "Linux (Basic",
+            "CI/CD Basics",
+          ]}
+        />
+
+        <SkillCard
+          title="Testing"
+          skills={["JUnit", "API Testing (Postman)", "Manual Testing"]}
+        />
+      </div>
     </div>
   );
 }

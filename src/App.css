@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-radial-custom {
+/* .bg-radial-custom {
   background:
     radial-gradient(circle, rgba(219, 47, 222, 0.6), transparent 40%),
     radial-gradient(circle, rgba(111, 167, 200, 0.6), transparent 40%),
@@ -22,7 +22,7 @@
 
 .bg-radial-custom:hover {
   animation: moveBubbles 12s infinite linear;
-}
+} */
 /* @keyframes moveBubbles {
   0% {
     background-position:
@@ -47,7 +47,7 @@
   }
 } */
 
-@keyframes moveBubbles {
+/* @keyframes moveBubbles {
   0% {
     background-position:
       0% 0%,
@@ -62,4 +62,4 @@
       100% 0%,
       0% 0%;
   }
-}
+} */
