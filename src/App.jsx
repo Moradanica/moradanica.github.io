@@ -25,7 +25,7 @@ function App() {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="md:relative z-10">
         <Navbar />
         <Home />
         <Skills />

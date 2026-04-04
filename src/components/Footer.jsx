@@ -2,10 +2,10 @@ import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-slate-100 border-t border-slate-200 text-slate-600 text-sm text-center w-full py-6 mt-6 flex flex-col gap-1">
+    <div className="flex flex-col gap-1 w-full py-3 bg-slate-100 border-t border-slate-200 text-slate-600 text-sm text-center raleway-font font-medium">
       <p>Danica Mora</p>
       <p className="flex justify-center items-center">
-        <FaCopyright className="" /> {new Date().getFullYear()} All Rights
+        <FaCopyright className="mx-1" /> {new Date().getFullYear()} All Rights
         Reserved
       </p>
       <div className="flex justify-center gap-2">
@@ -13,7 +13,7 @@ export default function Footer() {
           <FaGithub size={20} />
         </a>
         <a href="">
-          <FaLinkedin />
+          <FaLinkedin size={20} />
         </a>
       </div>
     </div>

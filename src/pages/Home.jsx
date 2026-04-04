@@ -5,12 +5,12 @@ import myPic from "../assets/mypic.JPG";
 
 export default function Home() {
   return (
-    <main className="flex flex-col lg:flex-row pb-4 h-screen pt-20 lg:pt-16 w-full">
+    <main className="flex flex-col lg:flex-row items-center justify-center h-screen w-full pb-4 pt-20 lg:pt-16">
       <div
         className="flex flex-col 
-      gap-3 self-center mx-20 w-full p-6"
+      gap-3 p-6 lg:w-1/2 w-full mx-20 text-center lg:text-left "
       >
-        <h1 className="raleway-font font-bold text-6xl">
+        <h1 className="raleway-font font-bold text-6xl md:text-5xl">
           Hi, I'm{" "}
           <span
             className=" 
@@ -19,8 +19,10 @@ export default function Home() {
             Danica Mora
           </span>
         </h1>
-        <h2 className="raleway-font font-semibold text-3xl">Java Developer</h2>
-        <p className="railway-font font-medium leading-7  md:w-135">
+        <h2 className="raleway-font font-semibold text-3xl md:text-2xl">
+          Java Developer
+        </h2>
+        <p className="railway-font font-medium leading-7 w-3/4 mx-auto lg:mx-0">
           I'm a Java Backend Developer with experience in Spring Boot, REST
           APIs, MySQL, and AWS
         </p>
