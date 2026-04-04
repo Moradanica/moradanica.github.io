@@ -13,17 +13,17 @@ export default function Home() {
         className=" flex flex-col 
       gap-3 self-center mx-20"
       >
-        <h1 className="font-sans text-6xl">
+        <h1 className="raleway-font font-bold text-6xl">
           Hi, I'm{" "}
           <span
-            className="font-sans 
+            className=" 
           text-blue-500"
           >
             Danica Mora
           </span>
         </h1>
-        <h2 className="text-3xl font-sans italic">Java Developer</h2>
-        <p className="font-sans leading-7 text-lg w-135">
+        <h2 className="raleway-font font-semibold text-3xl">Java Developer</h2>
+        <p className="railway-font font-medium leading-7  w-135">
           I'm a Java Backend Developer with experience in Spring Boot, REST
           APIs, MySQL, and AWS
         </p>
