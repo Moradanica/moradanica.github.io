@@ -20,16 +20,16 @@ function App() {
       </div>
 
       {/* Mouse bubbles */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <MouseBubbles />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative z-10">
         <Navbar />
         <Home />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
         <Footer />
       </div>
