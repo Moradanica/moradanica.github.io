@@ -3,7 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 export default function Projects() {
   return (
     <div
-      className=" pt-16 gap-y-30 raleway-font border rounded-xl border-zinc-300 md:flex md:flex-col
+      className="pt-16 gap-y-30 raleway-font
+      md:flex md:flex-col
      "
     >
       <h1 className=" px-23 uppercase font-bold text-4xl ">Projects</h1>

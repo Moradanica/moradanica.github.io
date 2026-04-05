@@ -2,7 +2,7 @@ import SkillCard from "../components/SkillCard";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col h-screen w-full gap-3 pt-16 raleway-font ">
+    <div className="flex flex-col w-full gap-3 pt-16 raleway-font ">
       <h1 className=" px-23 uppercase font-bold text-4xl ">Skills</h1>
       <div className="grid  items-stretch gap-8 p-20 md:grid-cols-2">
         <SkillCard
