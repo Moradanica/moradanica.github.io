@@ -14,8 +14,7 @@ export default function Skills() {
             "REST APIs",
             "Hibernate",
             "Jakarata EE",
-            "ashdkajsdhkajsdhkajshdkjashajshdkajshdajksasjhdaksjdhasdhasjk",
-            "asdjakjshdakjshdakjsdhajksdh",
+          
           ]}
         />
 
@@ -28,10 +27,7 @@ export default function Skills() {
             "Tailwind CSS",
             "Javascript (Basic)",
             "jQuery",
-            "asdjajklsdh",
-            "ajshdakjshd",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto unde sint perspiciatis! Velit incidunt, blanditiis nulla qui dolor, excepturi at in, consequatur doloremque laboriosam aut soluta ipsum sunt perferendis maiores.",
-          ]}
+            ]}
         />
 
         <SkillCard
