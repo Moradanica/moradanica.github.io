@@ -5,7 +5,7 @@ import myPic from "../assets/mypic.JPG";
 
 export default function Home() {
   return (
-    <main className="flex flex-col lg:flex-row items-center justify-center h-screen w-full pb-4 pt-20 lg:pt-16">
+    <main className="flex flex-col items-center justify-center min-h-dvh w-full pb-10 pt-20 lg:pt-16 lg:flex-row">
       <div
         className="flex flex-col 
       gap-3 p-6 lg:w-1/2 w-full mx-20 text-center lg:text-left "

@@ -9,13 +9,16 @@ export default function Contact() {
         </p>
       </div>
       {/* from tailwind */}
-      <div className="p-10 bg-white/40  ">
+      <div
+        className="p-5 bg-white/40 
+      md:p-10"
+      >
         <div
           className="pb-12 
         border-gray-900/10"
         >
-          <div className="grid grid-cols-1 w-full mt-10 gap-x-6 gap-y-8 sm:grid-cols-6 ">
-            <div className="col-span-4 ">
+          <div className="grid grid-cols-1  mt-10 gap-y-8 md:grid-cols-6 md:gap-x-6 ">
+            <div className="col-span-3 md:col-span-4 ">
               <label
                 htmlFor="name"
                 className="block text-sm/6 font-medium text-gray-900"
