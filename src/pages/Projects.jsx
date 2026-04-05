@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function Projects() {
   return (
     <div
-      className="pt-16 gap-y-30 raleway-font
+      className="pt-16 gap-y-30 min-h-lvh raleway-font
       md:flex md:flex-col
      "
     >
