@@ -4,6 +4,7 @@ export default function Projects() {
   return (
     <div id="projects"
       className="pt-16 gap-y-30 min-h-lvh raleway-font
+      bg-gradient-to-r from-indigo-50 via-pink-50 to-yellow-50 
       md:flex md:flex-col
      "
     >

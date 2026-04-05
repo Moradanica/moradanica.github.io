@@ -1,5 +1,4 @@
 import { maxGeneratorDuration, motion } from "framer-motion";
-import mypic from "../assets/mypic.JPG";
 import { useState, useEffect } from "react";
 import myPic from "../assets/mypic.JPG";
 

@@ -10,12 +10,21 @@ export default function Navbar() {
     { name: "Contact", path: "/contact" },
   ];
   return (
-    <nav className="flex flex-col justify-between items-center fixed top-0 right-0 left-0 p-3 h-17 raleway-font bg-transparent backdrop-blur-xs md:flex-row  lg:mx-20">
-      <div className="hidden md:block w-1/4 font-bold text-2xl uppercase ">
+    <nav className="flex flex-col justify-between 
+    items-center fixed top-0 right-0 left-0 
+    p-3 h-17 border-b border-white/20
+     raleway-font bg-transparent 
+     shadow-[0_2px_10px_rgba(0,0,0,0.05)]
+    backdrop-blur-md md:flex-row ">
+      <div className="hidden 
+      md:block md:mx-20 w-1/4 font-bold text-2xl 
+      uppercase ">
         <a href="/">Portfolio</a> 
       </div>
 
-      <ul className="flex p-2 w-full  justify-center md:gap-2 lg:justify-end lg:w-3/4 md:flex-row ">
+      <ul className="flex p-2 w-full  
+      justify-center md:gap-2 
+      lg:justify-end lg:w-3/4 md:flex-row md:mx-20">
         {navItems.map((item) => (
           <li key={item.name} className="relative px-3 uppercase md:px-8 ">
             {/* <Link to={item.path}>{item.name}</Link> */}
