@@ -7,11 +7,23 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
+import About from "./pages/About";
 import MouseBubbles from "./components/MouseBubbles";
+import { createBrowserRouter, Route, RouterProvider } from "react-router-dom"
+
+
+const router = createBrowserRouter([
+  { path: "/", element: <Home /> },
+  { path: "/projects", element: <Projects /> },
+  { path: "/skills", element: <Skills /> }, {
+    path: "/about", element: <About />
+  }, { path: "/contact", element: <Contact /> }
+]);
 
 function App() {
   const x = useMotionValue(50); // start in center (%)
   const y = useMotionValue(50);
+
 
   return (
     <div className="">
@@ -25,11 +37,14 @@ function App() {
       </div> */}
 
       {/* Content */}
+
+{/* <RouterProvider router={router} /> */}
       <div className="md:relative z-10">
         <Navbar />
         <Home />
         <Skills />
         <Projects />
+        <About />
         <Contact />
         <Footer />
       </div>
