@@ -42,9 +42,9 @@ function App() {
       <div className="md:relative z-10">
         <Navbar />
         <Home />
+         <About />
         <Skills />
         <Projects />
-        <About />
         <Contact />
         <Footer />
       </div>

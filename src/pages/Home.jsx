@@ -21,10 +21,10 @@ export default function Home() {
           </span>
         </h1>
         <h2 className="raleway-font font-semibold text-3xl md:text-2xl">
-          Java Developer
+          Java Fullstack Developer
         </h2>
         <p className="railway-font font-medium leading-7 w-3/4 mx-auto lg:mx-0">
-          I'm a Java Backend Developer with experience in Spring Boot, REST
+          I'm a Java Fullstack Developer with experience in Spring Boot, REST
           APIs, MySQL, and AWS
         </p>
       </div>

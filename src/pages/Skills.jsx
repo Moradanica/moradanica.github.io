@@ -2,8 +2,9 @@ import SkillCard from "../components/SkillCard";
 
 export default function Skills() {
   return (
-    <div id="skills" className="flex flex-col min-h-lvh w-full pt-16 gap-3 raleway-font ">
-      <h1 className=" px-23 uppercase font-bold text-4xl ">Skills</h1>
+    <div id="skills" className="flex flex-col min-h-dvh w-full pt-16 gap-3 raleway-font 
+    bg-gradient-to-r from-indigo-50 via-pink-50 to-yellow-50">
+      <h1 className=" px-23 font-bold text-2xl uppercase  ">Skills</h1>
       <div className="grid  items-stretch gap-8 p-20 md:grid-cols-2">
         <SkillCard
           title="Backend"
