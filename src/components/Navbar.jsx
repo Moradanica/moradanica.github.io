@@ -17,7 +17,7 @@ export default function Navbar() {
      shadow-[0_2px_10px_rgba(0,0,0,0.05)]
     backdrop-blur-md md:flex-row ">
       <div className="hidden 
-      md:block md:mx-20 w-1/4 font-bold text-2xl 
+      lg:block md:mx-20 w-1/4 font-bold text-2xl 
       uppercase tracking-tighter">
         <a href="/">Portfolio</a>
       </div>
@@ -26,14 +26,8 @@ export default function Navbar() {
       justify-center md:gap-2 
       lg:justify-end lg:w-3/4 md:flex-row md:mx-20">
         {navItems.map((item) => (
-          <li key={item.name} className="relative px-3 uppercase md:px-8 ">
-            {/* <Link to={item.path}>{item.name}</Link> */}
-            {/* <a
-              href={`#${item.name.toLowerCase()}`}
-              className="relative font-bold hover:text-blue-600 hover:underline underline-offset-8 transition-colors duration-300"
-            >
-              {item.name}
-            </a> */}
+          <li key={item.name} className="relative px-3 
+          uppercase md:px-8 ">
             <a
               href={`#${item.name.toLowerCase()}`}
               className="relative font-bold 
