@@ -1,16 +1,12 @@
+import PageLayout from "../components/PageLayout";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div id="projects"
-      className="pt-16 gap-y-30 min-h-lvh raleway-font
-      bg-gradient-to-r from-indigo-50 via-pink-50 to-yellow-50 
-      md:flex md:flex-col
-     "
-    >
-      <h1 className=" px-23 font-bold text-2xl uppercase ">Projects</h1>
-
-      <div className="grid grid-cols-1 gap-5 mx-8 p-7 md:grid-cols-2 lg:grid-cols-3 md:mx-20">
+    <PageLayout id="projects" title="Projects" containerClass="px-8 
+    md:px-16" theme="bg-gradient-to-r from-cyan-50 via-pink-50 
+        to-yellow-50">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
           title="Title"
           content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto numquam cumque itaque perferendis debitis vel excepturi vitae dolorum nostrum iure blanditiis, ea soluta magnam exercitationem est facilis nihil laborum!"
@@ -24,6 +20,9 @@ export default function Projects() {
           content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto numquam cumque itaque perferendis debitis vel excepturi vitae dolorum nostrum iure blanditiis, ea soluta magnam exercitationem est facilis nihil laborum!"
         />
       </div>
-    </div>
+    </PageLayout>
+
+
+
   );
 }

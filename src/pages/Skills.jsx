@@ -1,12 +1,13 @@
+import { section } from "framer-motion/client";
 import SkillCard from "../components/SkillCard";
+import PageLayout from "../components/PageLayout";
 
 export default function Skills() {
   return (
-    <div id="skills" className="flex flex-col min-h-dvh w-full pt-16 gap-3 
-    raleway-font 
-    ">
-      <h1 className=" px-23 font-bold text-2xl uppercase  ">Skills</h1>
-      <div className="grid  items-stretch gap-8 p-20 md:grid-cols-2">
+
+    <PageLayout id="skills" title="skills">
+      <div className="grid gap-8  
+        items-stretch md:grid-cols-2">
         <SkillCard
           title="Backend"
           skills={[
@@ -16,7 +17,7 @@ export default function Skills() {
             "REST APIs",
             "Hibernate",
             "Jakarata EE",
-          
+
           ]}
         />
 
@@ -29,7 +30,7 @@ export default function Skills() {
             "Tailwind CSS",
             "Javascript (Basic)",
             "jQuery",
-            ]}
+          ]}
         />
 
         <SkillCard
@@ -49,6 +50,8 @@ export default function Skills() {
           skills={["JUnit", "API Testing (Postman)", "Manual Testing"]}
         />
       </div>
-    </div>
+    </PageLayout>
+
   );
+
 }

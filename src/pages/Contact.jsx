@@ -4,8 +4,9 @@ export default function Contact() {
     justify-center p-20 gap-10 min-h-dvh 
     raleway-font md:gap-20 md:flex-row">
       <div className="self-center w-sm lg:w-md">
-        <h1 className="pb-3 uppercase font-bold text-4xl ">Contact Me</h1>
-        <p className="mr-4">
+        <h2 className="font-bold text-3xl uppercase 
+        tracking-wider text-slate-800 mb-8">Contact Me</h2>
+        <p className="text-lg max-w-lg leading-relaxed font-medium">
           Let's Conneect! I'm open to new opportunities, collaborations, and
           interesting projects.
         </p>
@@ -19,7 +20,8 @@ export default function Contact() {
           className="pb-12 
         border-gray-900/10"
         >
-          <div className="grid grid-cols-1  mt-10 gap-y-8 md:grid-cols-6 md:gap-x-6 ">
+          <div className="grid grid-cols-1 mt-10 gap-y-8 leading-relaxed font-medium
+           md:grid-cols-6 md:gap-x-6 ">
             <div className="col-span-3 md:col-span-4 ">
               <label
                 htmlFor="name"
@@ -33,7 +35,7 @@ export default function Contact() {
                   id="name"
                   type="text"
                   name="name"
-                  autocomplete="given-name"
+                  autoComplete="given-name"
                   className="block w-full px-3 py-1.5  bg-white rounded-md text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
@@ -52,14 +54,14 @@ export default function Contact() {
                   id="email"
                   type="email"
                   name="email"
-                  autocomplete="email"
+                  autoComplete="email"
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
             <div className="col-span-6">
               <label
-                for="message"
+                htmlFor="message"
                 className="block text-sm/6 font-medium text-gray-900"
               >
                 Message

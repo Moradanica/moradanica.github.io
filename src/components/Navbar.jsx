@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: "Contact", path: "/contact" },
   ];
   return (
-    <nav className="flex flex-col justify-between 
+    <nav className="flex flex-col z-20 justify-between 
     items-center fixed top-0 right-0 left-0 
     p-3 h-17 border-b border-white/20
      raleway-font bg-transparent 
@@ -18,8 +18,8 @@ export default function Navbar() {
     backdrop-blur-md md:flex-row ">
       <div className="hidden 
       md:block md:mx-20 w-1/4 font-bold text-2xl 
-      uppercase ">
-        <a href="/">Portfolio</a> 
+      uppercase tracking-tighter">
+        <a href="/">Portfolio</a>
       </div>
 
       <ul className="flex p-2 w-full  
@@ -28,9 +28,18 @@ export default function Navbar() {
         {navItems.map((item) => (
           <li key={item.name} className="relative px-3 uppercase md:px-8 ">
             {/* <Link to={item.path}>{item.name}</Link> */}
-            <a
+            {/* <a
               href={`#${item.name.toLowerCase()}`}
               className="relative font-bold hover:text-blue-600 hover:underline underline-offset-8 transition-colors duration-300"
+            >
+              {item.name}
+            </a> */}
+            <a
+              href={`#${item.name.toLowerCase()}`}
+              className="relative font-bold 
+              tracking-widest hover:text-blue-600 
+              hover:underline underline-offset-8 
+              transition-colors duration-300"
             >
               {item.name}
             </a>

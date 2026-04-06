@@ -10,6 +10,7 @@ import Background from "./components/Background";
 import About from "./pages/About";
 import MouseBubbles from "./components/MouseBubbles";
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom"
+import PageLayout from "./components/PageLayout";
 
 
 const router = createBrowserRouter([
@@ -38,11 +39,11 @@ function App() {
 
       {/* Content */}
 
-{/* <RouterProvider router={router} /> */}
+      {/* <RouterProvider router={router} /> */}
       <div className="md:relative z-10">
         <Navbar />
         <Home />
-         <About />
+        <About />
         <Skills />
         <Projects />
         <Contact />
