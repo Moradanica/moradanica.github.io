@@ -15,26 +15,7 @@ export default function Footer() {
         {new Date().getFullYear()} Danica Mora. All Rights Reserved.
       </p>
 
-      <div className="flex justify-center gap-4 mt-1">
-        <a 
-          target="_blank" 
-          rel="noopener noreferrer"
-          href="https://github.com/Moradanica"
-          aria-label="GitHub"
-          className="hover:text-black transition-colors"
-        >
-          <FaGithub size={22} />
-        </a>
-        <a 
-          target="_blank" 
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/danica-mora"
-          aria-label="Linkedin"
-          className="hover:text-[#0077b5] transition-colors"
-        >
-          <FaLinkedin size={22} />
-        </a>
-      </div>
+    
     </footer>
   );
 }
