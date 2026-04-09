@@ -66,12 +66,13 @@ export default function Contact() {
           Let's Conneect! I'm open to new opportunities, collaborations, and
           interesting projects.
         </p>
-        <div className="flex flex-col gap-1 pt-6  leading-relaxed font-medium tracking-wider">
+        <div className="flex flex-col gap-1 pt-6  leading-relaxed 
+        font-medium tracking-wider">
           <a target="_blank"
             rel="noopener noreferrer"
             href="mailto:moradanica@gmail.com"
             aria-label="Email"
-            className="flex hover:text-blue-700 transition-colors"
+            className="flex self-start hover:text-blue-700 transition-colors"
           ><MdEmail size={22} />moradanica@gmail.com</a>
 
           <a
@@ -79,7 +80,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             href="https://github.com/Moradanica"
             aria-label="GitHub"
-            className="flex hover:text-gray-500 transition-colors"
+            className="flex self-start hover:text-gray-500 transition-colors"
           >
             <FaGithub size={22} /> Github
           </a>
@@ -88,7 +89,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/danica-mora"
             aria-label="Linkedin"
-            className="flex hover:text-[#0077b5] transition-colors"
+            className="flex self-start hover:text-[#0077b5] transition-colors"
           >
             <FaLinkedin size={22} /> Linkedin
           </a>
