@@ -1,6 +1,10 @@
 import { MdEmail } from "react-icons/md";
 import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
 
+
+export default function Contact() {
+  
 const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -41,8 +45,6 @@ const [isSending, setIsSending] = useState(false);
       setIsSending(false);
     }
   };
-
-export default function Contact() {
   return (
     <div id="contact" className="flex flex-col 
     justify-center p-20 gap-10 min-h-dvh 
