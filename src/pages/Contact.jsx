@@ -14,8 +14,8 @@ const [isSending, setIsSending] = useState(false);
     const API_URL = "https://springboot-email-api-sendgrid.onrender.com/api/email/send";
     
     // Using FormData to easily grab values by their 'name' attributes
-    const formElement = e.currentTarget.closest('form') || e.target.form;
-    const formData = new FormData(e.currentTarget.form || e.target.closest('div').parentElement);
+    // const formElement = e.currentTarget.closest('form') || e.target.form;
+    // const formData = new FormData(e.currentTarget.form || e.target.closest('div').parentElement);
     
     // If you prefer manual extraction to match your UI structure:
     const payload = {
@@ -190,7 +190,7 @@ const [isSending, setIsSending] = useState(false);
                 hover:text-white
                 hover:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-50 sm:text-sm/6"
                 type="submit"
-              onClick={handleTest}
+             
               
               >
                 {isSending ? "Sending..." : "Send Message"}
