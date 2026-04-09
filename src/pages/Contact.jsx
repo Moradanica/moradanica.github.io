@@ -175,6 +175,7 @@ const [isSending, setIsSending] = useState(false);
                 hover:bg-blue-700
                 hover:text-white
                 hover:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-50 sm:text-sm/6"
+                type="submit"
               onClick={handleSubmit}
               >
                 {isSending ? "Sending..." : "Send Message"}
