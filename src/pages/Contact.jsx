@@ -45,6 +45,20 @@ const [isSending, setIsSending] = useState(false);
       setIsSending(false);
     }
   };
+
+  const handleTest = async () => {
+    alert("Test");
+  const TEST_URL = "https://springboot-email-api-sendgrid.onrender.com/api/email/test";
+  
+  try {
+    const response = await fetch(TEST_URL); // Default is GET
+    const data = await response.text();
+    console.log("Server response:", data);
+    alert("Connection successful: " + data);
+  } catch (error) {
+    console.error("Server is likely asleep or unreachable:", error);
+  }
+};
   return (
     <div id="contact" className="flex flex-col 
     justify-center p-20 gap-10 min-h-dvh 
@@ -176,7 +190,8 @@ const [isSending, setIsSending] = useState(false);
                 hover:text-white
                 hover:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-50 sm:text-sm/6"
                 type="submit"
-              onClick={handleSubmit}
+              onClick={handleTest}
+              
               >
                 {isSending ? "Sending..." : "Send Message"}
               </button>
