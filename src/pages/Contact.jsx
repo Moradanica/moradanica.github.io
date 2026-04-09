@@ -1,6 +1,47 @@
 import { MdEmail } from "react-icons/md";
 import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
 
+const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    const API_URL = "https://springboot-email-api-sendgrid.onrender.com/api/email/send";
+    
+    // Using FormData to easily grab values by their 'name' attributes
+    const formElement = e.currentTarget.closest('form') || e.target.form;
+    const formData = new FormData(e.currentTarget.form || e.target.closest('div').parentElement);
+    
+    // If you prefer manual extraction to match your UI structure:
+    const payload = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        // Optional: Clear form here
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error connecting to the server.");
+    } finally {
+      setIsSending(false);
+    }
+  };
+
 export default function Contact() {
   return (
     <div id="contact" className="flex flex-col 
@@ -64,7 +105,7 @@ export default function Contact() {
                   id="name"
                   type="text"
                   name="name"
-                  autoComplete="given-name"
+                  autoComplete="name"
                   className="block w-full px-3 py-1.5  bg-white rounded-md text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
@@ -85,6 +126,27 @@ export default function Contact() {
                   name="email"
                   autoComplete="email"
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+            <div className="col-span-4">
+              <label
+                htmlFor="subject"
+                className="block text-sm/6 font-medium text-gray-900"
+              >
+                Subject
+              </label>
+              <div className="mt-2">
+                <input
+                  placeholder="Enter Email Subject"
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  autoComplete="subject"
+                  className="block w-full rounded-md 
+                  bg-white px-3 py-1.5 text-base text-gray-900 
+                  outline-1 -outline-offset-1 outline-gray-300 
+                  placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -111,8 +173,9 @@ export default function Contact() {
                 hover:bg-blue-700
                 hover:text-white
                 hover:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-50 sm:text-sm/6"
+              onClick={handleSubmit}
               >
-                Send Message
+                {isSending ? "Sending..." : "Send Message"}
               </button>
             </div>
           </div>
