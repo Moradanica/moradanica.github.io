@@ -117,6 +117,7 @@ export default function Contact() {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
                     placeholder="Your Name"
                     id="name"
                     type="text"
@@ -136,6 +137,7 @@ export default function Contact() {
                 </label>
                 <div className="mt-2">
                   <input
+                    required
                     placeholder="Email Address"
                     id="email"
                     type="email"
@@ -154,6 +156,7 @@ export default function Contact() {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
                     placeholder="Enter Email Subject"
                     id="subject"
                     type="text"
@@ -175,6 +178,7 @@ export default function Contact() {
                 </label>
                 <div className="mt-2">
                   <textarea
+                  required
                     placeholder="Type Message here"
                     className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                     name="message"
