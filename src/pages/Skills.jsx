@@ -38,9 +38,8 @@ export default function Skills() {
           skills={[
             "Git & Github",
             "AWS EC2",
-            "Elastic Beanstalk",
             "Maven",
-            "Linux (Basic",
+            "Linux (Basic)",
             "CI/CD Basics",
           ]}
         />
