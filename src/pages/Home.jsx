@@ -1,5 +1,5 @@
 import myPic from "../assets/mypic.JPG";
-import {cv} from "../assets/Danica Mora_cv_general.pdf"
+import cv from "../assets/Danica Mora_cv_general.pdf";
 
 
 export default function Home() {
