@@ -1,4 +1,6 @@
 import myPic from "../assets/mypic.JPG";
+import {cv} from "../assets/Danica Mora_cv_general.pdf"
+
 
 export default function Home() {
   return (
@@ -46,7 +48,7 @@ export default function Home() {
               View Work
             </a>
             <a
-              href="/cv.pdf"
+              href={cv}
               target="_blank"
               className="px-8 py-3 border-2 
               border-slate-300 text-slate-700 
