@@ -56,7 +56,7 @@ export default function Home() {
               rounded-full hover:bg-white/50 
               transition-all backdrop-blur-sm"
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>
