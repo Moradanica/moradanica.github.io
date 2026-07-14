@@ -12,7 +12,7 @@ export default function Footer() {
       
       <p className="flex justify-center items-center">
         <FaCopyright className="mx-1" size={12} /> 
-        {new Date().getFullYear()} Danica Mora. All Rights Reserved.
+        {new Date().getFullYear()} All Rights Reserved.
       </p>
 
     
