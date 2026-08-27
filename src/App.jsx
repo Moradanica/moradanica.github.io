@@ -8,9 +8,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
 import About from "./pages/About";
-import MouseBubbles from "./components/MouseBubbles";
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom"
-import PageLayout from "./components/PageLayout";
 
 
 const router = createBrowserRouter([

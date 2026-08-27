@@ -7,8 +7,8 @@ export default function Background() {
 
   const bg = useTransform([x, y], ([latestX, latestY]) => {
     return `
-      radial-gradient(circle at ${latestX}% ${latestY}%, rgba(56,189,248,0.2), transparent 40%),
-      radial-gradient(circle at ${100 - latestX}% ${100 - latestY}%, rgba(236,72,153,0.2), transparent 50%)
+      radial-gradient(circle at ${latestX}% ${latestY}%, rgba(56,189,248,0.7), transparent 40%),
+      radial-gradient(circle at ${100 - latestX}% ${100 - latestY}%, rgba(236,72,153,0.7), transparent 50%)
     `;
   });
 
